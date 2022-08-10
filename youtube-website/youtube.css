@@ -1,0 +1,30 @@
+.search-bar
+{
+    display: block;
+}
+.thumbnail{
+    width: 300px;
+    margin-top: 0px;
+    object-position: top;
+    display: block;
+}
+
+.video-title{
+    font-weight: bold;
+    width: 300px;
+    margin-top: 10px;
+}
+
+.video-author, .video-stats{
+    font-size: 15px;
+    margin-bottom: 0px;
+    color:gray;
+    display:block;
+}
+
+.video-preview{
+    width: 300px;
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: top;
+}
