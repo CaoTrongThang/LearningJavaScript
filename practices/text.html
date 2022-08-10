@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <title>TEXT PRACTICE</title>
+  </header>
+  <style>
+    .eth-price {
+      font-size: 25px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
+    .eth-currency {
+      font-size: 15px;
+      color: gray;
+    }
+    .eth-price-analyze {
+      color: green;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-size: 15px;
+    }
+    .price-change-after-hours {
+      color: gray;
+      font-size: 15px;
+      margin-top: 0px;
+    }
+    .price-change-decrease {
+      color: red;
+    }
+    .buy-button {
+      background-color: rgb(8, 181, 8);
+      border-radius: 5px;
+      border-width: 2px;
+      padding: 5px;
+    }
+    .sell-button {
+      background-color: red;
+      border-radius: 5px;
+      border-width: 2px;
+      padding: 5px;
+    }
+  </style>
+  <body>
+    <p class="eth-price">1,049.61 <span class="eth-currency">USD</span></p>
+    <p class="eth-price-analyze">+18.05 (1.75%) today</p>
+    <p class="price-change-after-hours">
+      After hours 1,048.00
+      <span class="price-change-decrease">-1.16 (0.15%)</span>
+    </p>
+
+    <button class="buy-button">BUY</button>
+    <input size="1" list="browsers" />
+    <datalist id="browsers">
+      <option value="1 LOT"></option>
+      <option value="0.1 LOT"></option>
+    </datalist>
+    <button class="sell-button">SELL</button>
+  </body>
+</html>
