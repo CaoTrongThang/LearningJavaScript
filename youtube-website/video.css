@@ -1,0 +1,48 @@
+.vid-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px
+    
+}
+
+.vid-preview{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.vid-thumb{
+    width: 100%;
+}
+
+
+.channel-thumb{
+    width: 90%;
+    border-radius: 25px;
+    margin: auto;
+    display: block;
+    
+}
+.vid-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.vid-decs-div{
+    margin: 0px;
+}
+
+.vid-title{
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 1px;
+}
+
+.vid-author, .vid-stats
+{
+    margin-bottom: 0px;
+
+}
+.vid-stats
+{
+    margin-top: 3px;
+}

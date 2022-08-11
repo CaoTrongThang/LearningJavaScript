@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <title>GRID EXERCISE</title>
+  </header>
+  <style></style>
+  <body>
+    <div style="display: grid; grid-template-columns: 100px 100px">
+      <div style="background-color: green">div 1</div>
+      <div style="background-color: red">
+        div 2
+        <p>text</p>
+      </div>
+    </div>
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 100px 100px 200px;
+        margin-top: 30px;
+      "
+    >
+      <div style="background-color: green">div 1</div>
+      <div style="background-color: red">
+        div 2
+        <p>text</p>
+      </div>
+      <div style="background-color: green">div 3</div>
+    </div>
+
+    <div
+      style="display: grid; grid-template-columns: 100px 1fr; margin-top: 30px"
+    >
+      <div style="background-color: green">100px</div>
+      <div style="background-color: red">100fr</div>
+    </div>
+
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 100px 1fr 1fr;
+        margin-top: 30px;
+      "
+    >
+      <div style="background-color: green">100px</div>
+      <div style="background-color: red">1fr</div>
+      <div style="background-color: blue">1fr</div>
+    </div>
+
+    <div
+      style="
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 30px;
+        column-gap: 10px;
+        row-gap: 40px;
+      "
+    >
+      <div style="background-color: green; height: 200px">1fr</div>
+      <div style="background-color: red; height: 200px">1fr</div>
+      <div style="background-color: blue; height: 200px">1fr</div>
+      <div style="background-color: red; height: 200px">1fr</div>
+      <div style="background-color: blue; height: 200px">1fr</div>
+      <div style="background-color: green; height: 200px">1fr</div>
+    </div>
+  </body>
+</html>
