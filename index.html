@@ -2,10 +2,13 @@
 <html>
   <header>
     <title>youtube.com</title>
-    <link rel="stylesheet" href="youtube-css/video.css" />
-    <link rel="stylesheet" href="youtube-css/header.css" />
-    <link rel="stylesheet" href="youtube-css/general.css" />
-    <link rel="preconnect" href="youtube-css/https://fonts.googleapis.com" />
+    
+    <link rel="stylesheet" href="/youtube-css/video.css" />
+    <link rel="stylesheet" href="/youtube-css/header.css" />
+    <link rel="stylesheet" href="/youtube-css/general.css" />
+    <link rel="stylesheet" href="/youtube-css/sidebar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
@@ -16,17 +19,100 @@
   <body>
     <div class="header">
       <div class="left-section">
-        left section
+        <img class="hamburger-menu-pic" src="../images/header-icons/hamburger-menu.svg">
+        <img class="youtube-logo-pic" src="../images/header-icons/youtube-logo.svg">
       </div>
       <div class="middle-section">
-        <input class="search-bar" type="text">
+        <input class="search-bar" type="text" placeholder="Search">
+        <div class="search-bar-and-tooltip">
+        <button class="search-button">
+          <img class="search-icon" src="/images/header-icons/search.svg">
+        </button>
+          <div class="tooltip">Search</div>
+        </div>
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="/images/header-icons/voice-search-icon.svg">
+        </button>
       </div>
-      <div class="right-section">right section</div>
+      <div class="right-section">
+        <img class="upload-icon" src="/images/header-icons/upload.svg">
+        <img class="youtube-apps-icon" src="/images/header-icons/youtube-apps.svg">
+        <div class="notifications-div">
+          <img class="notifications-icon" src="/images/header-icons/notifications.svg">
+          <div class="notificator">3</div>
+        </div>
+        <img class="current-user-pic" src="/images/my-channel-img.jpg">
+      </div>
+    </div>
+    <div class="side-bar">
+      <div class="elements-container">      
+        <div class="side-bar-elements">
+        <button class="side-bar-button"><img class="home-img" src="/images/side-bar-icons/home.svg"></button>
+        <p class="home-text">Home</p>
+      </div>
+      <div class="side-bar-elements"><button class="side-bar-button">
+        <img class="explore-img" src="/images/side-bar-icons/explore.svg"></button>
+        <p class="explore-text">Explore</p>
+      </div>
+      <div class="side-bar-elements"><button class="side-bar-button">
+        <img class="library-img" src="/images/side-bar-icons/library.svg"></button>
+        <p class="library-text">Library</p>
+      </div>
+      <div class="side-bar-elements">
+        <button class="side-bar-button"><img class="originals-img" src="/images/side-bar-icons/originals.svg"></button>
+        <p class="originals-text">Originals</p>
+      </div>
+      <div class="side-bar-elements">
+        <button class="side-bar-button"><img class="subscriptions-img" src="/images/side-bar-icons/subscriptions.svg"></button>
+        <p class="subscriptions-text">Subscriptions</p>
+      </div>
+      <div class="side-bar-elements">
+        <button class="side-bar-button"><img class="youtube-music-img" src="/images/side-bar-icons/youtube-music.svg"></button>
+        <p class="youtube-music-text">Youtube Music</p>
+      </div>
+    </div>
+
+    <div class="subscribed-channel-flex">
+      <p class="subscribed-title">SUBSCRIBED CHANNELS</p>
+    </div>
+      <div class="subscribed-channel-info">
+        <img class="subscribed-channel-img" src="/images/channel-4.jpeg">
+        <p class="subscribed-channel-name">Veritasium</p>
+      </div>
+      <div class="subscribed-channel-info">
+        <img class="subscribed-channel-img" src="/images/channel-5.jpeg">
+        <p class="subscribed-channel-name">CS Dojo</p>
+      </div>
+      <div class="subscribed-channel-info">
+        <img class="subscribed-channel-img" src="/images/channel-3.jpeg">
+        <p class="subscribed-channel-name">SSSniperWolf</p>
+      </div>
+      <div class="subscribed-channel-info">
+        <img class="subscribed-channel-img" src="/images/channel-6.jpeg">
+        <p class="subscribed-channel-name">MrBeast</p>
+      </div>
+      <div class="subscribed-channel-info">
+        <img class="subscribed-channel-img" src="/images/channel-2.jpeg">
+        <p class="subscribed-channel-name">Markiplier</p>
+      </div>
+      <div class="subscribed-channel-info">
+        <img class="subscribed-channel-img" src="/images/channel-8.jpeg">
+        <p class="subscribed-channel-name">Tech Vision</p>
+      </div>
+      <div class="subscribed-channel-info">
+        <img class="subscribed-channel-img" src="/images/channel-12.jpeg">
+        <p class="subscribed-channel-name">TED-Ed</p>
+      </div>
+      
+      
+      
+      
     </div>
     <div class="vid-grid">
       <div class="vid-preview">
         <div class="vid-thumb-div">
           <img class="vid-thumb" src="../images/thumbnail-1.png" />
+          <div class="vid-time">14:20</div>
         </div>
         <div class="vid-info-grid">
           <div class="channel-thumb-div">
@@ -44,6 +130,7 @@
       <div class="vid-preview">
         <div class="vid-thumb-div">
           <img class="vid-thumb" src="../images/thumbnail-2.png" />
+          <div class="vid-time">5:10</div>
         </div>
         <div class="vid-info-grid">
           <div class="channel-thumb-div">
@@ -52,13 +139,14 @@
           <div class="vid-decs-div">
             <p class="vid-title">Try Not To Laugh Challenge #9</p>
             <p class="vid-author">Markiplier</p>
-            <p class="vid-stats">19M views $#183; 4 years ago</p>
+            <p class="vid-stats">19M views &#183; 4 years ago</p>
           </div>
         </div>
       </div>
       <div class="vid-preview">
         <div class="vid-thumb-div">
           <img class="vid-thumb" src="../images/thumbnail-3.png" />
+          <div class="vid-time">10:30</div>
         </div>
         <div class="vid-info-grid">
           <div class="channel-thumb-div">
@@ -76,6 +164,7 @@
       <div class="vid-preview">
         <div class="vid-thumb-div">
           <img class="vid-thumb" src="../images/thumbnail-4.png" />
+          <div class="vid-time">14:52</div>
         </div>
         <div class="vid-info-grid">
           <div class="channel-thumb-div">
@@ -93,6 +182,7 @@
       <div class="vid-preview">
         <div class="vid-thumb-div">
           <img class="vid-thumb" src="../images/thumbnail-5.png" />
+                  <div class="vid-time">6:10</div>
         </div>
         <div class="vid-info-grid">
           <div class="channel-thumb-div">
@@ -110,6 +200,7 @@
       <div class="vid-preview">
         <div class="vid-thumb-div">
           <img class="vid-thumb" src="../images/thumbnail-6.png" />
+          <div class="vid-time">8:46</div>
         </div>
         <div class="vid-info-grid">
           <div class="channel-thumb-div">
@@ -127,6 +218,7 @@
       <div class="vid-preview">
         <div class="vid-thumb-div">
           <img class="vid-thumb" src="../images/thumbnail-7.png" />
+          <div class="vid-time">12:35</div>
         </div>
         <div class="vid-info-grid">
           <div class="channel-thumb-div">
@@ -142,6 +234,7 @@
       <div class="vid-preview">
         <div class="vid-thumb-div">
           <img class="vid-thumb" src="../images/thumbnail-8.png" />
+          <div class="vid-time">69:69</div>
         </div>
         <div class="vid-info-grid">
           <div class="channel-thumb-div">
@@ -157,6 +250,7 @@
       <div class="vid-preview">
         <div class="vid-thumb-div">
           <img class="vid-thumb" src="../images/thumbnail-9.png" />
+          <div class="vid-time">1:23</div>
         </div>
         <div class="vid-info-grid">
           <div class="channel-thumb-div">
@@ -172,6 +266,7 @@
       <div class="vid-preview">
         <div class="vid-thumb-div">
           <img class="vid-thumb" src="../images/thumbnail-10.png" />
+          <div class="vid-time">5:14</div>
         </div>
         <div class="vid-info-grid">
           <div class="channel-thumb-div">
@@ -189,6 +284,7 @@
       <div class="vid-preview">
         <div class="vid-thumb-div">
           <img class="vid-thumb" src="../images/thumbnail-11.png" />
+          <div class="vid-time">3:45</div>
         </div>
         <div class="vid-info-grid">
           <div class="channel-thumb-div">
@@ -205,6 +301,7 @@
       <div class="vid-preview">
         <div class="vid-thumb-div">
           <img class="vid-thumb" src="../images/thumbnail-12.png" />
+          <div class="vid-time">16:57</div>
         </div>
         <div class="vid-info-grid">
           <div class="channel-thumb-div">

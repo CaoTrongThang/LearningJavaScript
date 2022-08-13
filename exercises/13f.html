@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <title>13F EXERCISE</title>
+  </header>
+  <style>
+    .tweet-container{
+      display: flex;
+      flex-direction: row;
+      width: 400px;
+      margin-left: 20px;
+      margin-top: 20px;
+    }
+    .tweet-info{
+      margin-left: 10px;
+    }
+    .profile-img{
+      width: 35px;
+      border-radius: 50%;
+    }
+    .name-and-gmail-grid{
+      display: grid;
+      grid-template-columns: 80px 1fr;
+    }
+    .tweet-name, .tweet-message, .tweet-gmail{
+      margin-top: 0px;
+      margin-bottom: 5px;
+    }
+    .tweet-name, .tweet-gmail{
+      display: inline-block;
+    }
+    .tweet-name{
+      font-weight: bold;
+    }
+    .tweet-gmail{
+      color: gray;
+    }
+    .tweet-url-link-flex{
+      display: flex;
+      flex-direction: row;
+      border-radius: 15px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: gray;
+      overflow: hidden;
+    }
+    .link-img-div{
+      width: 40%;
+      background-color: rgb(161, 161, 161);
+      
+    }
+    .tweet-url-link{
+      margin-left: 15px;
+    }
+
+    .url-domain{
+      color:rgb(104, 104, 104);
+      margin-bottom: 4px;
+    }
+    .url-desc{
+      font-family: Roboto, Arial;
+      margin-top: 4px;
+    }
+  </style>
+  <body style="margin: 0;">
+    <div class="tweet-container">
+      <div class="profile-img-div">
+        <img class="profile-img" src="/images/channel-12.jpeg">
+      </div>
+      <div class="tweet-info">
+        <div class="name-and-gmail-grid">
+          <div class="tweet-name">Mimia </div>
+          <div class="tweet-gmail">@thangdeptrai</div>
+        </div>
+        <p class="tweet-message">Today i've seen an incredible video!</p>
+        <div class="tweet-url-link-flex">
+          <div class="link-img-div"> 
+           </div>
+          <div class="tweet-url-link">
+            <p class="url-domain">youtube.com</p>
+            <p class="url-desc">Backend web development - a complete overview</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

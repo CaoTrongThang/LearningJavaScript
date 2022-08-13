@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <title>14D EXERCISE</title>
+  </header>
+  <style>
+    body {
+      height: 2000px;
+    }
+    .right-side-bar {
+      position: absolute;
+      background-color: green;
+      width: 200px;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .overlay {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+    }
+    .box-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 350px;
+      height: 150px;
+      background-color: white;
+      border-radius: 10px;
+      align-items: center;
+      transition-duration: 0.5s;
+    }
+    .box-grid:hover {
+      width: 400px;
+      height: 160px;
+    }
+    .info {
+      padding-left: 20px;
+    }
+    .title {
+      margin-bottom: 10px;
+      margin-top: 0px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .desc {
+      margin-top: 0px;
+    }
+  </style>
+  <body>
+    <div class="overlay">
+      <div class="box-grid">
+        <div class="info">
+          <p class="title">MODAL TITLE</p>
+          <p class="desc">This is a modal</p>
+          <button>Close</button>
+        </div>
+      </div>
+    </div>
+    <div class="right-side-bar">RIGHT SIDE BAR</div>
+  </body>
+</html>

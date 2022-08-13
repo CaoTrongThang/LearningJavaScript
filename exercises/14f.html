@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <header>
+    <title>14F EXERCISE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </header>
+  <style>
+    body {
+      height: 2000px;
+      margin: 0;
+    }
+    .side-bars-container {
+    }
+    .discord-channels {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 80px;
+      background-color: rgb(53, 53, 53);
+      align-items: center;
+      justify-content: baseline;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .channel-img {
+      border-radius: 50%;
+      width: 60px;
+      margin-top: 10px;
+    }
+    .discord-current-channel-boxer {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 80px;
+      width: 160px;
+      background-color: rgb(65, 65, 65);
+    }
+    .discord-current-channel {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .channel-info-flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .chat-channel {
+      color: rgb(150, 152, 157);
+      font-family: Arial;
+      font-weight: normal;
+    }
+    .chat-channel:hover {
+      background-color: rgb(70, 70, 70);
+      cursor: pointer;
+    }
+    .channel-info {
+      color: white;
+    }
+    .plus-button {
+      background-color: transparent;
+      border: none;
+      font-size: 25px;
+      transition-duration: 0.3s;
+      color: gray;
+    }
+    .plus-button:hover {
+      cursor: pointer;
+      font-size: 28px;
+    }
+    .voice-chat-channel-flex {
+      display: flex;
+      flex-direction: column;
+      padding-left: 10px;
+    }
+    .voice-chat-icon {
+      width: 20px;
+    }
+    .voice-icon-and-channel-name {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .voice-channel-name {
+      color: rgb(150, 152, 157);
+      flex: 1;
+      margin-left: 8px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+    .user-container {
+      display: flex;
+      flex-direction: column;
+    }
+    .user-info-flex {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 20px;
+      margin-top: 15px;
+    }
+    .user-img {
+      width: 21px;
+      border-radius: 50%;
+    }
+    .user-name {
+      color: rgb(150, 152, 157);
+      margin-bottom: 0px;
+      margin-top: 0px;
+      margin-left: 10px;
+    }
+  </style>
+  <body>
+    <div class="side-bars-container">
+      <div class="discord-channels">
+        <img class="channel-img" src="/images/channel-10.jpeg" />
+        <img class="channel-img" src="/images/channel-11.jpeg" />
+        <img class="channel-img" src="/images/channel-12.jpeg" />
+        <img class="channel-img" src="/images/channel-9.jpeg" />
+        <img class="channel-img" src="/images/channel-8.jpeg" />
+      </div>
+      <div class="discord-current-channel-boxer">
+        <div class="discord-current-channel">
+          <div class="channel-info-flex">
+            <p class="channel-info">INFO</p>
+            <button class="plus-button">+</button>
+          </div>
+          <p class="chat-channel"># new-videos</p>
+          <p class="chat-channel"># updates</p>
+          <p class="chat-channel"># faq</p>
+        </div>
+        <div class="voice-chat-channel-flex">
+          <div class="voice-icon-and-channel-name">
+            <img
+              class="voice-chat-icon"
+              src="/images/voice-chat-icon.png.crdownload"
+            />
+            <p class="voice-channel-name">General</p>
+          </div>
+          <div class="users-container">
+            <div class="user-info-flex">
+              <img class="user-img" src="/images/channel-9.jpeg" />
+              <p class="user-name">Ắc qui</p>
+            </div>
+
+            <div class="user-info-flex">
+              <img class="user-img" src="/images/channel-2.jpeg" />
+              <p class="user-name">Thắng Sói</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
